@@ -11,10 +11,10 @@ import {
 
 const AboutSection = () => {
   const stats = [
-    { number: "500+", label: "AI Solutions Delivered", icon: Brain },
+    { number: "5680+", label: "AI Automation Tools Available", icon: Brain },
     { number: "98%", label: "Client Satisfaction", icon: Star },
     { number: "24/7", label: "AI Support Available", icon: Target },
-    { number: "50+", label: "Industries Served", icon: Users }
+    { number: "7+", label: "Industries Served", icon: Users }
   ];
 
   const values = [

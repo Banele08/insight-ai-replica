@@ -68,7 +68,7 @@ const ServicesSection = () => {
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            What We Do <span className="text-secondary">Best</span>
+            Innovative AI Solutions for <span className="text-secondary">Your Business</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
