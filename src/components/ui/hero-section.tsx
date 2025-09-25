@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Bot, MessageSquare } from "lucide-react";
+import { ArrowRight, Zap, Bot, MessageSquare, Globe, Server, Code } from "lucide-react";
 import logoImage from "@/assets/insightful-ai-logo.png";
 
 const HeroSection = () => {
@@ -44,8 +44,8 @@ const HeroSection = () => {
 
             {/* Description */}
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl leading-relaxed">
-              We build intelligent AI experiences and drive business growth through cutting-edge automation. 
-              From AI chatbots and voice agents to custom automation tools, we transform your ideas into 
+              We build intelligent AI experiences, stunning websites, and drive business growth through cutting-edge automation. 
+              From web design and development to AI chatbots, voice agents, and hosting services, we transform your ideas into 
               results that elevate your business.
             </p>
 
@@ -68,7 +68,19 @@ const HeroSection = () => {
             </div>
 
             {/* Features highlight */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 max-w-4xl">
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <Code className="w-5 h-5 text-secondary" />
+                <span>Web Design</span>
+              </div>
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <Globe className="w-5 h-5 text-secondary" />
+                <span>Web Development</span>
+              </div>
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <Server className="w-5 h-5 text-secondary" />
+                <span>Hosting Services</span>
+              </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Bot className="w-5 h-5 text-secondary" />
                 <span>AI Chatbots</span>
