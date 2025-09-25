@@ -58,12 +58,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-foreground mb-4">Get in Touch</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-muted-foreground">
-                <Mail className="w-4 h-4 text-secondary" />
-                <span>hello@insightfulai.com</span>
-              </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-4 h-4 text-secondary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+27 313 5444</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-secondary" />
