@@ -35,63 +35,56 @@ const HeroSection = () => {
 
             {/* Main heading */}
             <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-              Insightful
-              <span className="text-secondary block">AI Solutions</span>
-              <span className="text-muted-foreground text-3xl md:text-4xl font-normal block mt-2">
-                & Growth Automation
-              </span>
+              Empower Your Business with
+              <span className="text-secondary block">Digital Excellence</span>
             </h1>
 
             {/* Description */}
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl leading-relaxed">
-              We build intelligent AI experiences, stunning websites, and drive business growth through cutting-edge automation. 
-              From web design and development to AI chatbots, voice agents, and hosting services, we transform your ideas into 
-              results that elevate your business.
+              We provide cutting-edge solutions to establish your online presence, automate operations, and engage customers 24/7.
             </p>
 
-            {/* CTA Buttons */}
+            {/* CTA Button */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button 
-                size="lg" 
-                className="bg-gradient-accent hover:shadow-glow transition-all duration-300 text-lg px-8 py-4 h-auto font-semibold group"
-              >
-                Start Your AI Project
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
               <Button 
                 variant="outline" 
                 size="lg" 
                 className="border-border hover:bg-card text-lg px-8 py-4 h-auto font-medium"
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                View Our AI Services
+                View Our Services
               </Button>
             </div>
 
             {/* Features highlight */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 max-w-4xl">
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <Code className="w-5 h-5 text-secondary" />
-                <span>Web Design</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <Globe className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-1">Website Development</h3>
+                  <p className="text-sm">Get a stunning, fast, and professional website in as little as a week. Go from zero to online, fast.</p>
+                </div>
               </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <Globe className="w-5 h-5 text-secondary" />
-                <span>Web Development</span>
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <Zap className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-1">AI Automation</h3>
+                  <p className="text-sm">Reclaim your time. We automate repetitive tasks in your sales, support, and operations.</p>
+                </div>
               </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <Server className="w-5 h-5 text-secondary" />
-                <span>Hosting Services</span>
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <MessageSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-1">WhatsApp Assistant</h3>
+                  <p className="text-sm">Offer instant support, day or night. Let a smart chatbot answer queries and book appointments.</p>
+                </div>
               </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <Bot className="w-5 h-5 text-secondary" />
-                <span>AI Chatbots</span>
-              </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <MessageSquare className="w-5 h-5 text-secondary" />
-                <span>Voice Agents</span>
-              </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <Zap className="w-5 h-5 text-secondary" />
-                <span>Automation Tools</span>
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <Bot className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-1">AI Voice Agents</h3>
+                  <p className="text-sm">Sound professional always. Use a human-like voice agent to handle customer calls and scheduling.</p>
+                </div>
               </div>
             </div>
           </div>
