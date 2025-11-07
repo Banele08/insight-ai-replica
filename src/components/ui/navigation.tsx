@@ -34,7 +34,12 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="default" size="sm" className="bg-gradient-accent text-foreground font-medium">
+            <Button 
+              variant="default" 
+              size="sm" 
+              className="bg-gradient-accent text-foreground font-medium"
+              onClick={() => window.open('https://tally.so/r/YOUR_FORM_ID', '_blank')}
+            >
               Get Started
             </Button>
           </div>
@@ -65,7 +70,12 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="default" size="sm" className="bg-gradient-accent text-foreground font-medium mt-4">
+              <Button 
+                variant="default" 
+                size="sm" 
+                className="bg-gradient-accent text-foreground font-medium mt-4"
+                onClick={() => window.open('https://tally.so/r/YOUR_FORM_ID', '_blank')}
+              >
                 Get Started
               </Button>
             </div>

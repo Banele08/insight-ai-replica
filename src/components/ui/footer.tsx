@@ -64,7 +64,10 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <Button className="mt-4 bg-gradient-accent hover:shadow-glow transition-all duration-300">
+            <Button 
+              className="mt-4 bg-gradient-accent hover:shadow-glow transition-all duration-300"
+              onClick={() => window.open('https://tally.so/r/YOUR_FORM_ID', '_blank')}
+            >
               Start Your Project
             </Button>
           </div>
