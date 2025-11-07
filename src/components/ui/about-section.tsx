@@ -10,11 +10,31 @@ import {
 } from "lucide-react";
 
 const AboutSection = () => {
-  const stats = [
-    { number: "5680+", label: "AI Automation Tools Available", icon: Brain },
-    { number: "98%", label: "Client Satisfaction", icon: Star },
-    { number: "24/7", label: "AI Support Available", icon: Target },
-    { number: "7+", label: "Industries Served", icon: Users }
+  const processSteps = [
+    { 
+      number: "01", 
+      title: "Consultation", 
+      description: "We discuss your business needs and goals to understand what you need",
+      icon: Users 
+    },
+    { 
+      number: "02", 
+      title: "Design", 
+      description: "We design the website layout and plan all features and functionalities",
+      icon: Target 
+    },
+    { 
+      number: "03", 
+      title: "Development", 
+      description: "We develop, test, and finalize all the details to perfection",
+      icon: Brain 
+    },
+    { 
+      number: "04", 
+      title: "Deployment", 
+      description: "We deploy and host your website, making it live for the world",
+      icon: Trophy 
+    }
   ];
 
   const values = [
@@ -95,22 +115,23 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 animate-scale-in">
-          {stats.map((stat, index) => (
+        {/* Process Steps Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 animate-scale-in">
+          {processSteps.map((step, index) => (
             <Card 
-              key={stat.label}
-              className="text-center p-6 bg-gradient-to-br from-card to-card/50 border-border/50 hover:border-secondary/50 transition-all duration-300 hover:shadow-glow"
+              key={step.title}
+              className="p-6 bg-gradient-to-br from-card to-card/50 border-border/50 hover:border-secondary/50 transition-all duration-300 hover:shadow-glow"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-0">
                 <div className="flex justify-center mb-4">
                   <div className="p-3 rounded-lg bg-secondary/20">
-                    <stat.icon className="w-6 h-6 text-secondary" />
+                    <step.icon className="w-6 h-6 text-secondary" />
                   </div>
                 </div>
-                <div className="text-3xl font-bold text-foreground mb-2">{stat.number}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-2xl font-bold text-secondary mb-2">{step.number}</div>
+                <h4 className="text-lg font-semibold text-foreground mb-3">{step.title}</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
               </CardContent>
             </Card>
           ))}
