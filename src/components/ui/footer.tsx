@@ -58,12 +58,10 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-foreground mb-4">Get in Touch</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-muted-foreground">
-                <Phone className="w-4 h-4 text-secondary" />
-                <span>+27 313 5444</span>
-              </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <MapPin className="w-4 h-4 text-secondary" />
-                <span>Worldwide Remote</span>
+                <Mail className="w-4 h-4 text-secondary" />
+                <a href="mailto:InsightfulAI01@outlook.com" className="hover:text-secondary transition-colors">
+                  InsightfulAI01@outlook.com
+                </a>
               </div>
             </div>
             <Button className="mt-4 bg-gradient-accent hover:shadow-glow transition-all duration-300">
