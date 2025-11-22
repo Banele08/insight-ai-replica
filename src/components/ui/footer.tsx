@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,14 +17,21 @@ const Footer = () => {
               Transforming businesses through intelligent AI automation and cutting-edge technology solutions.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="sm" className="hover:text-secondary">
-                <Linkedin className="w-5 h-5" />
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                className="hover:text-secondary"
+                onClick={() => window.open('https://www.instagram.com/insightfulairsa/', '_blank')}
+              >
+                <Instagram className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="sm" className="hover:text-secondary">
-                <Twitter className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="hover:text-secondary">
-                <Github className="w-5 h-5" />
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                className="hover:text-secondary"
+                onClick={() => window.open('https://web.facebook.com/profile.php?id=61581232359082', '_blank')}
+              >
+                <Facebook className="w-5 h-5" />
               </Button>
             </div>
           </div>
