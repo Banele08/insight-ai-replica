@@ -38,7 +38,7 @@ const Navigation = () => {
               variant="default" 
               size="sm" 
               className="bg-gradient-accent text-foreground font-medium"
-              onClick={() => window.open('https://tally.so/r/YOUR_FORM_ID', '_blank')}
+              onClick={() => window.open('https://calendly.com/insightfulai01/30min?month=2025-11', '_blank')}
             >
               Book an Appointment
             </Button>
@@ -74,7 +74,7 @@ const Navigation = () => {
                 variant="default" 
                 size="sm" 
                 className="bg-gradient-accent text-foreground font-medium mt-4"
-                onClick={() => window.open('https://tally.so/r/YOUR_FORM_ID', '_blank')}
+                onClick={() => window.open('https://calendly.com/insightfulai01/30min?month=2025-11', '_blank')}
               >
                 Book an Appointment
               </Button>
