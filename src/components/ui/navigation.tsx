@@ -40,7 +40,7 @@ const Navigation = () => {
               className="bg-gradient-accent text-foreground font-medium"
               onClick={() => window.open('https://tally.so/r/YOUR_FORM_ID', '_blank')}
             >
-              Get Started
+              Book an Appointment
             </Button>
           </div>
 
@@ -76,7 +76,7 @@ const Navigation = () => {
                 className="bg-gradient-accent text-foreground font-medium mt-4"
                 onClick={() => window.open('https://tally.so/r/YOUR_FORM_ID', '_blank')}
               >
-                Get Started
+                Book an Appointment
               </Button>
             </div>
           </div>
