@@ -29,7 +29,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     const emailResponse = await resend.emails.send({
       from: "Insightful AI <onboarding@resend.dev>",
-      to: ["InsighfulAI01@outlook.com"],
+      to: ["insightfulai01@outlook.com"],
       replyTo: email,
       subject: `New Contact Form Submission - ${service}`,
       html: `
